@@ -4,7 +4,7 @@ const app = express();
 const mapboxAPI = require('./utils/mapbox');
 const darkskyAPI = require('./utils/darksky');
 
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 function throwError(msg){
   return {
