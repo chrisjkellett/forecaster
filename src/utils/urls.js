@@ -1,4 +1,4 @@
-const {MAPBOX_TOKEN, DARKSKY_TOKEN} = require('../../.env');
+const {MAPBOX_TOKEN, DARKSKY_TOKEN} = require('../../config.js');
 
 module.exports = {
   fetchMapboxURL: (location) => {
