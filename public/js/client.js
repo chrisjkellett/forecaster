@@ -10,7 +10,7 @@
   });
 
   function fetchForecast(){
-    fetch(`./weather?location=${input.value}`)
+    fetch(`/weather?location=${input.value}`)
       .then((response) => {
         response.json().then(({temperature, location} = {}) => {
           addForecast(temperature, location);

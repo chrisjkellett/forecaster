@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const mapboxAPI = require('./utils/mapbox');
 const darkskyAPI = require('./utils/darksky');
+const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
 
@@ -32,4 +33,4 @@ app.get('/weather', (req, res) => {
   });
 });
 
-app.listen(3000);
+app.listen(port);
